@@ -35,3 +35,5 @@
 
 # 原理图、Gerber文件、ESPhome yaml配置文件、编译好后的固件已上传
 可以直接将ESPhome-Spark-ESP8266-Smart-Device_V10.0.bin刷入，即可使用。
+
+欢迎来我的博客逛逛：https://blog.gadx.top/
