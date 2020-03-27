@@ -33,4 +33,5 @@
 ![image](https://github.com/meijie-jesse/Spark-ESP8266-Smart-Device/blob/master/images/Revise.jpg)
 ![image](https://github.com/meijie-jesse/Spark-ESP8266-Smart-Device/blob/master/images/PCB.jpg)
 
-# 原理图和Gerber文件已上传。
+# 原理图、Gerber文件、ESPhome yaml配置文件、编译好后的固件已上传
+可以直接将ESPhome-Spark-ESP8266-Smart-Device_V10.0.bin刷入，即可使用。
