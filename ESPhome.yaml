@@ -1,0 +1,76 @@
+esphome:
+  name: switchtest
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: "Jesse"
+  password: "xxx"
+  manual_ip:
+    static_ip: 192.168.1.xx
+    gateway: 192.168.1.x
+    subnet: 255.255.255.0  
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Switchtest Fallback Hotspot"
+    password: "9ACWQVmeVHXL"
+    
+web_server:
+  port: 80   
+captive_portal:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+switch:
+  - platform: gpio
+    name: "开关1"
+    id: kaiguan1
+    pin:
+      number: 13
+      inverted: yes
+      
+  - platform: gpio
+    name: "开关2"
+    id: kaiguan2    
+    pin:
+      number: 12
+      inverted: yes
+      
+  - platform: gpio
+    name: "开关3"
+    id: kaiguan3    
+    pin:
+      number: 16
+      inverted: yes
+      
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO2
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "自复位开关1"
+    on_press:
+      - switch.toggle: kaiguan1
+    
+
+  - platform: gpio
+    pin:
+      number: GPIO4
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "自复位开关2"
+    on_press:
+      - switch.toggle: kaiguan2
+    
+  - platform: gpio
+    pin:
+      number: GPIO5
+      mode: INPUT_PULLUP
+      inverted: True
+    name: "自复位开关3"
+    on_press:
+      - switch.toggle: kaiguan3
