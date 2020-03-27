@@ -2,6 +2,8 @@
 
 基于ESP8266的三路86面板智能开关
 
+![image](https://github.com/meijie-jesse/Spark-ESP8266-Smart-Device/blob/master/images/USB%20power%20supply.jpg)
+
 # 特性介绍： 
 
 1、尺寸小，集成度高，安装方便。 尺寸63mmx63mm，可直接放进86暗盒，直接安装在开关或插座面板下方； 220V直接供电，无需单独电源。
